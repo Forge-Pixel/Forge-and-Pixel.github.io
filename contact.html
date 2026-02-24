@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Forge & Pixel | Crée son site web professionnel</title>
+    <meta name="description"
+        content="Contactez Forge & Pixel pour créer son site web. Formulaire, Discord, Telegram — choisissez votre moyen préféré pour démarrer votre projet.">
+    <meta name="keywords" content="crée son site web, contact, devis site web, Forge & Pixel, création site web">
+    <meta name="author" content="Forge & Pixel">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact — Forge & Pixel">
+    <meta property="og:description"
+        content="Contactez-moi pour discuter de votre projet web. Formulaire, Discord, Telegram.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://forgeandpixel.netlify.app/contact">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo-fp.svg">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ======== NAVIGATION ======== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar__logo">
+                <img src="assets/images/logo-fp.svg" class="neon-icon" alt="Forge &amp; Pixel" height="32">
+                <span>Forge & Pixel</span>
+            </a>
+            <ul class="navbar__links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">Présentation</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="contact.html" class="btn btn--primary btn--nav">Discutons →</a></li>
+            </ul>
+            <div class="navbar__burger" id="navBurger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======== PAGE HEADER ======== -->
+    <section class="page-header">
+        <div class="hero__orb hero__orb--1" style="width:300px;height:300px;opacity:0.2;"></div>
+        <div class="hero__orb hero__orb--2" style="width:250px;height:250px;opacity:0.15;"></div>
+        <div class="container">
+            <div class="section-header__tag reveal">// Contact</div>
+            <h1 class="page-header__title reveal">
+                Lançons votre <span class="highlight">projet</span>
+            </h1>
+            <p class="page-header__subtitle reveal">
+                Une question ? Un projet en tête ? Choisissez votre canal préféré pour me contacter.
+            </p>
+        </div>
+    </section>
+
+    <!-- ======== CONTACT CONTENT ======== -->
+    <section class="section--sm">
+        <div class="container">
+            <div class="grid-asym">
+
+                <!-- Contact Form -->
+                <div class="reveal reveal--left">
+                    <div class="card">
+                        <h2
+                            style="font-family: var(--ff-heading); font-size: 1.4rem; font-weight: 600; margin-bottom: var(--space-lg);">
+                            <img src="assets/images/lettre-fermee.svg" class="neon-icon" alt="" width="28" height="28"
+                                style="vertical-align:middle;margin-right:8px;"> Envoyez-moi un message
+                        </h2>
+                        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+                            id="contactForm">
+                            <!-- Honeypot for spam -->
+                            <p style="display:none;">
+                                <label>Ne pas remplir : <input name="bot-field"></label>
+                                <input type="hidden" name="form-name" value="contact">
+                            </p>
+
+                            <div class="form-group">
+                                <label for="name">Votre nom</label>
+                                <input type="text" id="name" name="name" placeholder="Jean Dupont" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Votre email</label>
+                                <input type="email" id="email" name="email" placeholder="jean@exemple.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="project">Type de projet</label>
+                                <select id="project" name="project">
+                                    <option value="" disabled selected>Choisir un type</option>
+                                    <option value="site-vitrine">Site Vitrine</option>
+                                    <option value="e-commerce">E-Commerce</option>
+                                    <option value="refonte">Refonte de site</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Votre message</label>
+                                <textarea id="message" name="message"
+                                    placeholder="Décrivez votre projet, vos objectifs, votre budget estimé..."
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary"
+                                style="width: 100%; justify-content: center;">
+                                <img src="assets/images/fusee.svg" class="neon-icon btn-icon" alt="" width="18"
+                                    height="18"> Envoyer le message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Info + Social -->
+                <div class="reveal reveal--right">
+                    <div class="contact-info">
+                        <div class="contact-info__item">
+                            <div class="contact-info__icon"><img src="assets/images/lettre-ouverte.svg"
+                                    class="neon-icon" alt="Email" width="40" height="40"></div>
+                            <div>
+                                <div class="contact-info__label">Email</div>
+                                <div class="contact-info__value">h.014.montage@gmail.com</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-info__item">
+                            <div class="contact-info__icon"><img src="assets/images/eclaire.svg" class="neon-icon"
+                                    alt="" width="40" height="40"></div>
+                            <div>
+                                <div class="contact-info__label">Délai de réponse</div>
+                                <div class="contact-info__value">Sous 24h maximum</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Buttons -->
+                    <div class="social-buttons">
+                        <a href="https://discord.gg/WXkWzJqdEm" target="_blank" rel="noopener" class="btn btn--discord">
+                            <img src="assets/images/discord.svg" class="neon-icon btn-icon" alt="" width="18"
+                                height="18"> Rejoindre Discord
+                        </a>
+                        <a href="https://t.me/forgeandpixel" target="_blank" rel="noopener" class="btn btn--telegram">
+                            <img src="assets/images/telegram.svg" class="neon-icon btn-icon" alt="" width="18"
+                                height="18"> Telegram
+                        </a>
+                    </div><!-- end social-buttons -->
+
+                    <div style="margin-top: var(--space-lg);" id="discord">
+                        <h3
+                            style="font-family: var(--ff-heading); font-size: 1.1rem; font-weight: 600; margin-bottom: var(--space-sm); color: var(--clr-text-muted);">
+                            Mon serveur Discord
+                        </h3>
+                        <div class="discord-widget">
+                            <iframe src="https://discord.com/widget?id=1472644201341521983&theme=dark" width="100%"
+                                height="350" allowtransparency="true" frameborder="0"
+                                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+                                title="Widget Discord Forge & Pixel" loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== CTA ======== -->
+    <section class="section">
+        <div class="container">
+            <div class="cta-banner reveal reveal--scale">
+                <h2 class="cta-banner__title">
+                    Chaque jour sans site, c'est des <span class="highlight">clients perdus</span>.
+                </h2>
+                <p class="cta-banner__text">
+                    Ne laissez pas vos concurrents prendre l'avantage. Créons votre présence web dès maintenant.
+                </p>
+                <div class="btn-group">
+                    <a href="#"
+                        onclick="document.getElementById('contactForm').scrollIntoView({behavior:'smooth'}); return false;"
+                        class="btn btn--accent">
+                        <img src="assets/images/flamme.png" class="btn-icon flamme-icon" alt=""
+                            style="filter:invert(1);"> Je veux mon site
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__copy">
+                © 2026 Forge & Pixel — Tous droits réservés.
+            </div>
+            <div class="footer__links">
+                <a href="index.html">Accueil</a>
+                <a href="about.html">Présentation</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
