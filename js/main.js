@@ -122,12 +122,15 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
 
       const formData = new FormData(contactForm);
-      const data = new URLSearchParams(formData).toString();
+      const data = new URLSearchParams();
+      for (const pair of formData) {
+        data.append(pair[0], pair[1]);
+      }
 
       fetch('/', {
         method: 'POST',
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: data
+        body: data.toString()
       })
         .then(() => {
           contactForm.innerHTML = `
